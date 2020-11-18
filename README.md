@@ -1,12 +1,4 @@
-# docker-test
-This is a simple project to learn Docker
+# quote-app
+This is a simple project to learn multi-module project with Spring Boot
 
-Укажите конфигурацию для Spring Boot в файле "application.properties".
-По умолчанию файл содержит: server.port=7776
-
-Пример:
-
-1) docker image build -t test-img .
-2) docker container run -d -p 8080:7776 test-img
-
-Для проверки выполните команду "curl localhost:8080"
+To get a quote: 'curl localhost:8080'

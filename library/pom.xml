@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-app</artifactId>
+    <artifactId>library</artifactId>
     <packaging>jar</packaging>
-    <name>spring-app</name>
-    <description>test spring app</description>
+    <name>library</name>
+    <description>test lib for spring app</description>
 
     <parent>
         <groupId>org.example</groupId>
@@ -18,22 +18,8 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>library</artifactId>
-            <version>${app.version}</version>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
