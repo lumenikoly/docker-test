@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;
+    username: admin
+    password:
+  h2:
+    console:
+      enabled: true
+springdoc:
+  version: 3.0.3
