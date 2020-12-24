@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: swagger-example
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=Oracle
+    username: admin
+    password:
+  h2:
+    console:
+      enabled: true
+springdoc:
+  version: 3.0.3
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: httptrace,loggers,health,info,metrics
+    loggers:
+      enabled: true
+  security:
+    enabled: false
